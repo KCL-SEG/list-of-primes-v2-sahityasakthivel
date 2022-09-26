@@ -1,11 +1,12 @@
 """List of prime numbers generator."""
+i
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
     list = []
 
     if (number_of_primes <=0):
-        raise ValueError("Negative or zero value entered")
+        raise ValueError()
     else:
         list.append(2)
         counter = 3
@@ -14,9 +15,8 @@ def primes(number_of_primes):
             for i in range(2,counter):
                 if(counter % i == 0):
                     prime = False
-                    break
-            if prime:
-                list.append(counter)
+                if prime:
+                    list.append(counter)
             counter+= 1
     return list
                  
